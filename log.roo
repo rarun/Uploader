@@ -1,0 +1,26 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-02-25 10:16:58
+project --topLevelPackage gov.dhs.uscis.efile --projectName Uploader --java 6 --packaging WAR
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-02-25 10:17:04
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-02-25 10:17:35
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+entity jpa --class ~.domain.Applicant --testAutomatically 
+field string --fieldName fname --notNull 
+field string --fieldName lname --notNull 
+field number --fieldName ssn --type java.lang.Integer --min 9
+field date --fieldName dob --type java.util.Date --notNull
+field string --fieldName email --notNull
+entity jpa --class ~.domain.Evidence --testAutomatically
+field string --fieldName filepath --notNull true --sizeMax 128
+field number --type long --fieldName filesize --notNull true
+field string --fieldName contentType --notNull true 
+field set --fieldName evidence --type ~.domain.Evidence --class ~.domain.Applicant --cardinality ONE_TO_MANY
+field reference --fieldName applicant --type ~.domain.Applicant --class ~.domain.Evidence --notNull
+web mvc setup
+web mvc all --package ~.web
+logging setup --level INFO --package ALL_SPRING
+selenium test --controller ~.web.ApplicantController
+security setup
+field string --class ~.domain.Applicant --fieldName password --notNull --sizeMin 6 --sizeMax 10
+finder add --finderName findApplicantsByEmailAndPasswordEquals --class ~.domain.Applicant
+perform eclipse
+// script --file C:\Users\Rama\Desktop\fileupload.roo

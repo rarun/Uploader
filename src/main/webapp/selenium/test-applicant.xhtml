@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+<link href="http://localhost:8080/" rel="selenium.base"/>
+<title>Selenium test for ApplicantController</title>
+</head>
+<body>
+    <table border="1" cellpadding="1" cellspacing="1">
+        <thead>
+            <tr>
+                <td colspan="3" rowspan="1">Selenium test for ApplicantController</td>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+                    <td>open</td>
+                    <td>http://localhost:8080/Uploader/applicants?form&amp;lang=en_US</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_fname_id</td>
+                    <td>someFname1</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_lname_id</td>
+                    <td>someLname1</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_ssn_id</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_dob_id</td>
+                    <td>Feb 25, 2013</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_email_id</td>
+                    <td>some@email.com</td>
+                </tr>
+                <tr>
+                    <td>clickAndWait</td>
+                    <td>//input[@id = 'proceed']</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_gov_dhs_uscis_efile_domain_Applicant_fname_fname_id</td>
+                    <td>someFname1</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_gov_dhs_uscis_efile_domain_Applicant_lname_lname_id</td>
+                    <td>someLname1</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_gov_dhs_uscis_efile_domain_Applicant_ssn_ssn_id</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_gov_dhs_uscis_efile_domain_Applicant_dob_dob_id</td>
+                    <td>Feb 25, 2013</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_gov_dhs_uscis_efile_domain_Applicant_email_email_id</td>
+                    <td>some@email.com</td>
+                </tr>
+            </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<aspectj>
+<aspects>
+<aspect name="gov.dhs.uscis.efile.domain.EvidenceIntegrationTest_Roo_Configurable"/>
+<aspect name="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="gov.dhs.uscis.efile.domain.ApplicantDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="gov.dhs.uscis.efile.domain.EvidenceDataOnDemand_Roo_Configurable"/>
+<aspect name="gov.dhs.uscis.efile.domain.EvidenceDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="gov.dhs.uscis.efile.domain.ApplicantDataOnDemand_Roo_Configurable"/>
+<aspect name="gov.dhs.uscis.efile.domain.EvidenceIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="gov.dhs.uscis.efile.domain.ApplicantIntegrationTest_Roo_Configurable"/>
+</aspects>
+</aspectj>
+

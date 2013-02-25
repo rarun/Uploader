@@ -1,0 +1,19 @@
+<aspectj>
+<aspects>
+<aspect name="gov.dhs.uscis.efile.domain.Evidence_Roo_ToString"/>
+<aspect name="gov.dhs.uscis.efile.web.EvidenceController_Roo_Controller"/>
+<aspect name="gov.dhs.uscis.efile.domain.Evidence_Roo_Configurable"/>
+<aspect name="gov.dhs.uscis.efile.domain.Applicant_Roo_Configurable"/>
+<aspect name="gov.dhs.uscis.efile.web.ApplicantController_Roo_Controller"/>
+<aspect name="gov.dhs.uscis.efile.domain.Applicant_Roo_Jpa_ActiveRecord"/>
+<aspect name="gov.dhs.uscis.efile.domain.Applicant_Roo_JavaBean"/>
+<aspect name="gov.dhs.uscis.efile.domain.Evidence_Roo_Jpa_ActiveRecord"/>
+<aspect name="gov.dhs.uscis.efile.web.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
+<aspect name="gov.dhs.uscis.efile.domain.Applicant_Roo_Finder"/>
+<aspect name="gov.dhs.uscis.efile.domain.Evidence_Roo_JavaBean"/>
+<aspect name="gov.dhs.uscis.efile.domain.Evidence_Roo_Jpa_Entity"/>
+<aspect name="gov.dhs.uscis.efile.domain.Applicant_Roo_ToString"/>
+<aspect name="gov.dhs.uscis.efile.domain.Applicant_Roo_Jpa_Entity"/>
+</aspects>
+</aspectj>
+

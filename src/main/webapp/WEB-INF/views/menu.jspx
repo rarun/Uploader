@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_evidence" z="cNeh3RgBMb0yg33rVyhIl9X6fHI=">
+            <menu:item id="i_evidence_new" messageCode="global_menu_new" url="/evidences?form" z="kyM1FwDpZfGwpIgr3Ox8iGd8bI8="/>
+            <menu:item id="i_evidence_list" messageCode="global_menu_list" url="/evidences?page=1&amp;size=${empty param.size ? 10 : param.size}" z="MLjnDixdErmTlWEK3RYh7sLTq9w="/>
+        </menu:category>
+        <menu:category id="c_applicant" z="m7ohrEWbFNJvxRTh9uLIHgnxP5A=">
+            <menu:item id="i_applicant_new" messageCode="global_menu_new" url="/applicants?form" z="Ja+J6yp/rSzMg8QfwakNoD14HiE="/>
+            <menu:item id="i_applicant_list" messageCode="global_menu_list" url="/applicants?page=1&amp;size=${empty param.size ? 10 : param.size}" z="pNcPHJH/qDEJRSs/q/oJWCc1rHI="/>
+        </menu:category>
+        <menu:category id="c_seleniumtests" z="PPLMd2yNB6/LSbjIWogAacRPU+Q=">
+            <menu:item id="si_seleniumtests_test" messageCode="selenium_menu_test_suite" url="/resources/selenium/test-suite.xhtml" z="wwunW/IPDcunN97u41MvMJZQ2to="/>
+        </menu:category>
+    </menu:menu>
+</div>

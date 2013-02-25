@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_gov_dhs_uscis_efile_domain_Applicant" items="${applicants}" z="O5ZUGybMw4LuiwyiVh8pFbo3/LU=">
+        <table:table data="${applicants}" id="l_gov_dhs_uscis_efile_domain_Applicant" path="/applicants" z="9k5pk41XnDnVHxJJAuvkNKrqAI0=">
+            <table:column id="c_gov_dhs_uscis_efile_domain_Applicant_fname" property="fname" z="En0PD/ipzYPqNtRz9g0nyFY3p90="/>
+            <table:column id="c_gov_dhs_uscis_efile_domain_Applicant_lname" property="lname" z="rnGoPfUpFfxDXNnURQ80R9bh/70="/>
+            <table:column id="c_gov_dhs_uscis_efile_domain_Applicant_ssn" property="ssn" z="B3aLlwDQEcM33vVw0Mhf7li0FYU="/>
+            <table:column date="true" dateTimePattern="${applicant_dob_date_format}" id="c_gov_dhs_uscis_efile_domain_Applicant_dob" property="dob" z="1SEP3grDBo/oKamqDJR+HX1lOBc="/>
+            <table:column id="c_gov_dhs_uscis_efile_domain_Applicant_email" property="email" z="0+ZQx4wesMixobOFc4L6w37HcK0="/>
+        </table:table>
+    </page:list>
+</div>
